@@ -1,0 +1,61 @@
+body{
+    background-color: #D8BFD8;
+}
+
+.container {
+    margin: 30px auto;
+    background: #808080;
+    padding: 30px;
+}
+
+.slider {
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.slider-line {
+    height: 400px;
+    width: 1600px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.slider-next,
+.slider-prev {
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 4;
+    border: none;
+}
+
+.slider-next {
+    left: 20px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
+  }
+  
+  .slider-prev {
+    right: 20px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
+  }
+
+  .slider-next:hover {
+    opacity: 1.0;
+  }
+  
+  .slider-prev:hover {
+    opacity: 1.0;
+  }
+
+
